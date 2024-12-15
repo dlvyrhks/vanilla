@@ -1,0 +1,183 @@
+/* 기본 스타일 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+main {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* 배경 이미지 스타일 */
+body img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+/* 폼 스타일 */
+form {
+    margin: 20px 0;
+    width: 100%;
+    max-width: 400px;
+}
+
+input[type="text"] {
+    width: 91%;
+    padding: 15px;
+    border: 2px solid #fdbb2d;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    color: #333;
+    background: #fff;
+    transition: border-color 0.3s ease;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+}
+
+input[type="text"]::placeholder {
+    color: #888;
+}
+
+input[type="text"]:focus {
+    border-color: #b21f1f;
+}
+
+input[type="submit"] {
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.05);
+}
+
+/* 숨김 클래스 */
+.hidden {
+    display: none;
+}
+
+/* 텍스트 스타일 */
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+}
+
+/* 할 일 목록 스타일 */
+ul#todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    max-width: 400px;
+    width: 100%;
+    position: absolute;
+    /* 위치를 절대 위치로 설정 */
+    top: 100px;
+    /* 상단 여백을 조정하여 날씨 아래에 위치 */
+    right: 20px
+}
+
+ul#todo-list li {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff
+}
+
+
+ul#todo-list li span {
+    flex: 1;
+}
+
+ul#todo-list li button {
+    background: #ff4b5c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+ul#todo-list li button:hover {
+    background: #e84150;
+}
+
+/* 명언과 날씨 스타일 */
+#quote {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#quote span {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bold;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+}
+
+#weather {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+}
+
+#weather span {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bold;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+}
