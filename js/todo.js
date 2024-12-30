@@ -60,6 +60,7 @@ const savedToDos = localStorage.getItem(TODOS_KEY);
 console.log(saveToDos);
 if (savedToDos !== null) {
     const parsedToDos = JSON.parse(savedToDos);
+    toDos = parsedToDos;
     // console.log.apply(parsedToDos);
     // parsedToDos.forEach(sayHello);
     // parsedToDos.forEach((item) => console.log("this is the turn of ", item));
